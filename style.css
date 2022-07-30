@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
 * {
     font-family: "Roboto", sans-serif;
@@ -7,17 +7,7 @@
 body {
     padding: 0;
     margin: 0;
-}
-
-.header,
-.hero {
-    justify-content: space-between;
-    align-items: center;
-}
-
-ul {
-    gap: 8px;
-    list-style-type: none;
+    min-height: 100vh;
 }
 
 .hero-container, .header, .hero, ul, .section, .card-container, .blue {
@@ -26,16 +16,71 @@ ul {
 
 .hero-container,
 .section {
-    padding: 50px 200px;
+    padding: 100px 200px;
+}
+
+.hero-container {
+    padding-top: 0;
 }
 
 .hero-container, .section-white {
     flex-direction: column;
 }
 
+.hero-container, a, button, .blue,
+.footer {
+    color: white;
+}
+
 .hero-container,
 .footer {
     background-color: #1f2937;
+}
+
+.header,
+.hero {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+ul {
+    gap: 8px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+
+blockquote p {
+   font-size: 36px;
+   font-style: italic;
+}
+
+figcaption {
+   text-align: right;
+   font-weight: 700;
 }
 
 .section-white,
@@ -48,12 +93,30 @@ ul {
     gap: 50px;
 }
 
+.card img {
+    border-radius: 10px;
+    border: 5px solid #3882f6;
+}
+
 .section-gray {
     background-color: #e5e7eb;
 }
 
+.section-blue {
+    justify-content: center;
+}
+
 button, .blue {
     background-color: #3882f6;
+}
+
+.blue {
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    flex: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .blue button {
@@ -62,8 +125,12 @@ button, .blue {
 
 button {  
     border: none;
-    border-radius: 2px;
-    color: white;
-    padding: 10px 20px;
-    max-height: 50px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    max-height: 30px;
+}
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
